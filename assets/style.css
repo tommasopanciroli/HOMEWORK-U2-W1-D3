@@ -1,14 +1,86 @@
+/* HEADER */
 header {
   background-color: #fbf7e3;
   border-radius: 5%;
+  color: #5e2002;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 header img {
   width: 2em;
+  margin-right: 1em;
 }
 
-header span {
-  padding-right: 1.5em;
+nav {
+  display: flex;
+  justify-content: center;
 }
 
+ul li {
+  border: 1px solid #f3df85;
+  width: 50%;
+  background-color: #f3df85;
+  margin: 2em;
+  border-radius: 25%;
+  padding: 1em;
+}
 
+ul li:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
+}
+
+ul li:nth-of-type(2) {
+  width: 8em;
+}
+
+ul li:nth-of-type(3) {
+  width: 8em;
+}
+
+ul li:nth-of-type(4) {
+  width: 8em;
+}
+
+ul li:nth-of-type(5) {
+  width: 8em;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  article.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    border: 1px solid #fbf7e3;
+    margin: 2em;
+  }
+  
+  .card .card-content {
+    background-color: #fbf7e3;
+    text-align: center;
+    padding: 1em;
+    /* faccio toccare il fondo al card-content anche se la mia card è più "corta" delle altre */
+    flex-grow: 1;
+    /* a questo punto il card-content toccherà sempre il fondo! lo rendo flessibile a sua volta in modo da poter spingere il bottone alla fine della card */
+    display: flex;
+    flex-direction: column;
+    /* spingo il titolo in alto e il bottone in basso */
+    justify-content: space-between;
+  }
+  
+  .card-content button {
+    width: 80%;
+    background-color: gray;
+    color: white;
+    padding: 0.5em 0;
+    margin: 0 auto;
+  }
