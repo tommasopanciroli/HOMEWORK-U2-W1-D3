@@ -1,0 +1,14 @@
+header {
+  background-color: #fbf7e3;
+  border-radius: 5%;
+}
+
+header img {
+  width: 2em;
+}
+
+header span {
+  padding-right: 1.5em;
+}
+
+
